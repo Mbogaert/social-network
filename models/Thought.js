@@ -38,7 +38,7 @@ const ThoughtSchema = new Schema ({
         type: String,
         required: true
     },
-    reactions: [ReactionSchema]
+    reactions: [ReactionSchema],
 },
 {
     toJSON: {
@@ -46,10 +46,9 @@ const ThoughtSchema = new Schema ({
         getters: true
     },
     id: false,
-})
+});
 
-ThoughtSchema.virtuals('reactionCount')
-.get(function() {
+ThoughtSchema.virtual('reactionCount').get(function() {
     return this.reactions.length;
 });
 
