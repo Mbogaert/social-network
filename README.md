@@ -1,17 +1,32 @@
 # social-network
 
-AS A social media startup
-I WANT an API for my social network that uses a NoSQL database
-SO THAT my website can handle large amounts of unstructured data
+## Description
+A API for a social network where users can put there thoughts and reactions to others thoughts as well as add friends.
 
-GIVEN a social network API
-WHEN I enter the command to invoke the application
-THEN my server is started and the Mongoose models are synced to the MongoDB database
-WHEN I open API GET routes in Insomnia Core for users and thoughts
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-THEN I am able to successfully create, update, and delete users and thoughts in my database
-WHEN I test API POST and DELETE routes in Insomnia Core
-THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
+## Installation
+Clone the repository to your computer, open in vs code. Run "npm i" and then "npm start." Open insomnia and play with the routes.
+  
+## Table of Contents:
+* [Description](#description)
+* [Installation](#installation)
+* [Built With](#built-with)
+* [Repository](#repository)
+* [Walk Through Video](#walk-through-video)
+* [Contributions](#contributions)
+* [License](#license)
 
-Video link https://drive.google.com/file/d/1jc1629UhAno81RSG6vYH7Wd8g_9HjZY3/view (The delete route was cutoff a bit with the 5 minute warning, but it works...)
+## Built With
+MongoDB, Mongoose, Node, Moment, Express
+
+## Repository
+[Repository Link](https://github.com/Mbogaert/social-network)
+
+## Walk Through Video
+[Video Link](https://drive.google.com/file/d/1jc1629UhAno81RSG6vYH7Wd8g_9HjZY3/view) 
+(The delete friend route got cutoff with the 5 minute video limit, but it works and everything else is in the video)
+
+## Contributions
+Made with Pride by Mathew Bogaert
+
+## License
+This application is unlicensed.
