@@ -9,7 +9,6 @@ const ReactionSchema = new Schema ({
     reactionBody: {
         type: String,
         require: true,
-        minLength: 1,
         maxLength: 280
     },
     username: {
@@ -20,7 +19,7 @@ const ReactionSchema = new Schema ({
         type: Date,
         default: Date.now,
         // Use moment in getter method to format the timestamp on query
-        get: (createdAtVal) => moment(createdAtVal).format("MM DD YY [at] hh:mm a"),
+        get: (createdAtVal) => moment(createdAtVal).format("MM DD YYYY [at] hh:mm a"),
     }
 },
 {
@@ -40,7 +39,7 @@ const ThoughtSchema = new Schema ({
         type: Date,
         default: Date.now,
         // Use moment in a getter method to format the timestamp on query
-        get: (createdAtVal) => moment(createdAtVal).format("MM DD YY [at] hh:mm a"),
+        get: (createdAtVal) => moment(createdAtVal).format("MM DD YYYY [at] hh:mm a"),
     },
     username: {
         type: String,
