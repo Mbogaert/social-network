@@ -13,4 +13,14 @@ router
     .put(updateThought)
     .delete(removeThought);
 
+    // create a reaction
+// router
+//     .route('/:id/reactions')
+//     .post()
+
+    // delete a reaction by id
+// router
+//     .route('/:id/reactions/:reactionId')
+//     .delete()
+
 module.exports = router;

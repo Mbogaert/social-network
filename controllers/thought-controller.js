@@ -83,7 +83,7 @@ const thoughtController = {
         .catch(err => res.json(err));
     }
     // add Reaction to thought
-    // remove reaction
+    // remove reaction by id
 }
 
 module.exports = thoughtController;

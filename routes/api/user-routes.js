@@ -14,4 +14,10 @@ router
     .put(updateUser)
     .delete(deleteUser);
 
+// add friend to users friend list and remove user from friend list
+// router
+//     .route('/:id/friends/:friendId')
+//     .post()
+//     .delete()
+
 module.exports = router;
